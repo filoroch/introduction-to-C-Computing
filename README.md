@@ -1,4 +1,4 @@
-# introduction-to-C-Computing
+# Introdução a computação com C
 Repositorio para estudos da base de computação ultilizando a linguagem C
 
 ## Conceitos basicos
