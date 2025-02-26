@@ -1,15 +1,14 @@
 # Introdução a computação com C
 Repositorio para estudos da base de computação ultilizando a linguagem C
 
-## Conceitos basicos
-### Cabeçalho de um programa em C
+## Cabeçalho de um programa em C
 ````C
 #include <stdio.h> //biblioteca padrão de entrada e saida do C
 ````
 
 - `#Include` importa bibliotecas,
 - `<stdio.h>` biblioteca de entrada e saida do sistema
-### Corpo de um programa em C
+## Corpo de um programa em C
 ````C
 // função que executa o programa
 int main(){
@@ -22,16 +21,16 @@ int main(){
 - `\n` -> quebra de linha
 - `return 0`; -> indica para o compilador que o sistema deu certo
 
-### Variaveis em C
+## Variaveis em C
 - int -> valores inteiros
 - float -> valores reais (ponto flutuante)
 - double -> valores reais precisos (ponto flutuante)
 - char -> caracteres isolados
 - char[] -> strings
 
-### Entrada e saida
+## Entrada e saida
 ---
-#### Entrada: ``printf()``
+### Entrada: ``printf()``
 ````C
 printf("Texto %especificador de formato \n", variaveis);
 printf("Nome: %s %s\nIdade: %i\nData de Nascimento %s\nPeso: %.1f\nAltura: %.2f", nome, sobrenome, idade, dataNascimento, peso, altura);
