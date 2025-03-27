@@ -62,3 +62,5 @@ ESPECIFICADORES DE FORMATO`<br>
 | float, double | `%f`, `%e` | 
 | char | `%c`, `s` | 
   
+# Referencias
+- [FreeCodeCamp - Manual de C](https://www.freecodecamp.org/portuguese/news/o-manual-do-iniciante-em-c-aprenda-o-basico-sobre-a-linguagem-de-programacao-c-em-apenas-algumas-horas/)
