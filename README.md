@@ -29,26 +29,40 @@ int main(){
 - As variaveis em C precisam ter explicitamente um tipo e um nome
 
 ### Tipos em C
+- void -> tipo especial que representa a ausencia de um tipo, usado principalmente para funçoes que não retornam valores
 #### Valores inteiros
 - char -> caracteres isolados da tabela ASCII
 - int -> valores inteiros
 - short -> 
 - long -> 
 #### Numeros de ponto flutuante
-- float -> valores reais (ponto flutuante)
-- double -> valores reais precisos (ponto flutuante)
-- long double -> 
+- `float` -> valores reais e ocupa menos espaço que double (ponto flutuante)
+- `double` -> valores reais precisos (ponto flutuante)
+- `long double` -> 
 
 - char[] -> strings (provavelmente isso se enquadra como um objeto ou array)
 
 ## Entrada e saida
----
-### Entrada: ``printf()``
+### Entrada
+- `scanf()` -> função de `stdio.h` que permite receber valores da entrada. Recebe o tipo da variavel armazenada atraves de um especificador de formato dentro de aspas seguido da variavel em si.
+
+    ```C
+    scanf("%s", nome)
+    ```
+
+- `fgets()` -> função que permite receber arrays de strings (char) com espaço. Por padrao scanf não consegue receber dados com espaços, assim se faz necessario usar fgets. Ela recebe a variavel que vai armazenar o array, o tamanho maximo da variavel e o stdin
+    ```C
+    fgets(nome, 23, stdin);
+    ```
+
+### Saida: 
+#### ``printf()`` -> funçao que permite imprimir dados na tela.
 ````C
-printf("Texto %especificador de formato \n", variaveis);
-printf("Nome: %s %s\nIdade: %i\nData de Nascimento %s\nPeso: %.1f\nAltura: %.2f", nome, sobrenome, idade, dataNascimento, peso, altura);
+    printf("Texto %especificador de formato \n", variaveis);
+    printf("Nome: %s %s\nIdade: %i\nData de Nascimento %s\nPeso: %.1f\nAltura: %.2f", nome, sobrenome, idade, dataNascimento, peso, altura);
 ````
-ESPECIFICADORES DE FORMATO`<br>
+    
+###### ESPECIFICADORES DE FORMATO`<br>
 - `%d` = Imprime um inteiro em formato decimal
 - `%i` = Equivalente a %d
 - `%f` = imprime um número de ponto flutuante no formato padrão
