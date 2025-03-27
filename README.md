@@ -1,6 +1,10 @@
 # Introdução a computação com C
 Repositorio para estudos da base de computação ultilizando a linguagem C
 
+## Anotações
+- C é uma linguagem estaticamente tipada. Isso quer dizer que os tipos precisam ser explicitamente declaraos e que não mudam.
+- Linguagem compilada -> transforma o codigo diretamente em codigo de maquina, tornando rapido e otimizado alem de leve
+
 ## Cabeçalho de um programa em C
 ````C
 #include <stdio.h> //biblioteca padrão de entrada e saida do C
@@ -20,13 +24,22 @@ int main(){
 - `printf()` -> função da lib <stdio.h> que imprime texto na saida do console.
 - `\n` -> quebra de linha
 - `return 0`; -> indica para o compilador que o sistema deu certo
+## Variaveis
+- Variaveis são caixas onde guardamos valores
+- As variaveis em C precisam ter explicitamente um tipo e um nome
 
-## Variaveis em C
+### Tipos em C
+#### Valores inteiros
+- char -> caracteres isolados da tabela ASCII
 - int -> valores inteiros
+- short -> 
+- long -> 
+#### Numeros de ponto flutuante
 - float -> valores reais (ponto flutuante)
 - double -> valores reais precisos (ponto flutuante)
-- char -> caracteres isolados
-- char[] -> strings
+- long double -> 
+
+- char[] -> strings (provavelmente isso se enquadra como um objeto ou array)
 
 ## Entrada e saida
 ---
