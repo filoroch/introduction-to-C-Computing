@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /*
 O programa precisa calcular a media de tres notas inseridas pelos alunos, então:
 
@@ -8,28 +6,35 @@ O programa precisa calcular a media de tres notas inseridas pelos alunos, então
 - calcular as notas recursivamente
 
 */
+#include <stdio.h>
 
-int recebeNotas(){
-    float nota = 0;
+// GLOBAL VARIABLES
+float mediaFinal = 0;
 
-    printf("Digite sua nota")
-    scanf("%f", nota)
+// FUNCTIONS PROTOTYPEs
+float recebeNotas();
+float calculeMedia(float x1, float x2, float x3);
 
-    calculeMedia()
+float  recebeNotas(){
+    int i = 0;
+    float nota[3];
+
+    for (i = 0; i < 3; i++)
+    {
+        printf("Digite sua nota: \n");
+        scanf("%f", &nota[i]);
+    }
+    mediaFinal = calculeMedia(nota[0], nota[1], nota[2]);
+    return mediaFinal;
 }
 
-int calculeMedia(float x1, float x2, float x3){
-    float mediaAritimetica = ( x1 + x2 + x3 ) / 3
-    return mediaAritimetica
+/*rece tres valores, soma todos eles e divide pela quantidae de valores*/
+float calculeMedia(float x1, float x2, float x3){
+    float mediaAritimetica = ( x1 + x2 + x3 ) / 3;
+    return mediaAritimetica;
 }
 
 int main(){
-    int mediaFinal = 0;
-    int i = 0
-    while (mediaFinal == 0 && 3)
-    {
-        recebeNotas()
-        i += 1
-    }
-    
+    recebeNotas();
+    printf("A média é: %.2f\n", mediaFinal);
 }
